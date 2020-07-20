@@ -29,6 +29,14 @@ export default function getRouter(basePath = '/') {
         }
       },
       {
+        path: '/form',
+        name: 'Form',
+        component: () => import(/* webpackChunkName: "form" */ '@/views/Form.vue'),
+        meta: {
+          hasLogin: true
+        }
+      },
+      {
         path: '/secure',
         name: 'Secure',
         component: () => import(/* webpackChunkName: "secure" */ '@/views/Secure.vue'),

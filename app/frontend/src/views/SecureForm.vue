@@ -1,17 +1,15 @@
 <template>
   <v-container>
-    <h1 class="my-6 text-center">Form</h1>
-    <FormOne />
+    <FormTwo />
   </v-container>
 </template>
 
 <script>
-import FormOne from '@/components/form/FormOne.vue';
-
+import FormTwo from '@/components/forms/FormTwo.vue';
 export default {
   name: 'Form',
   components: {
-    FormOne
+    FormTwo
   }
 };
 </script>

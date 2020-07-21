@@ -37,9 +37,9 @@ export default function getRouter(basePath = '/') {
         }
       },
       {
-        path: '/secure',
-        name: 'Secure',
-        component: () => import(/* webpackChunkName: "secure" */ '@/views/Secure.vue'),
+        path: '/secure-form',
+        name: 'SecureForm',
+        component: () => import(/* webpackChunkName: "secure-form" */ '@/views/SecureForm.vue'),
         meta: {
           hasLogin: true,
           requiresAuth: true

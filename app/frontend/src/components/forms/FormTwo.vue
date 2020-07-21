@@ -11,27 +11,18 @@
 import { Form } from 'vue-formio';
 
 export default {
-
   name: 'FormTwo',
-
   components: {
     formio: Form
   },
-
   data: () => ({
     // Load these from vuex or some other state store system.
-    formUrl: 'http://host.docker.internal:4001/dev-qnkbnmhxpcgkvdi/form2'
+    formUrl: 'https://chefs-jujaga-wxpbtr-dev.pathfinder.gov.bc.ca/bcgov-common/formtwo',
   }),
-
   methods: {
-    onSubmitMethod: function(submission) {
-      console.log(submission);
+    onSubmitMethod(submission) {
+      console.log(submission); // eslint-disable-line no-console
     }
-  },
-
-  created(){
   }
-
-
 };
 </script>

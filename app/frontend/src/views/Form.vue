@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import FormOne from '@/components/form/FormOne.vue';
+import FormOne from '@/components/forms/FormOne.vue';
 
 export default {
   name: 'Form',

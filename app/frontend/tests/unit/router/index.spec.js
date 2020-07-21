@@ -12,7 +12,7 @@ describe('Router', () => {
     const routeSet = new Set(routes);
     expect(routeSet).toContainEqual(expect.objectContaining({ name: 'Home' }));
     expect(routeSet).toContainEqual(expect.objectContaining({ name: 'Form' }));
-    expect(routeSet).toContainEqual(expect.objectContaining({ name: 'Secure' }));
+    expect(routeSet).toContainEqual(expect.objectContaining({ name: 'SecureForm' }));
     expect(routeSet).toContainEqual(expect.objectContaining({ name: 'NotFound' }));
   });
 });

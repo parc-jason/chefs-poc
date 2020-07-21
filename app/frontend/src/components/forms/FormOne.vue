@@ -1,6 +1,6 @@
 <template>
   <Formio
-    :form="form"
+    :form="formUrl"
     :src="source"
     :submission="submission"
     v-on:change="onChangeMethod"
@@ -18,8 +18,8 @@ export default {
   },
   data: () => ({
     form: {},
-    source:
-      'https://chefs-jujaga-wxpbtr-dev.pathfinder.gov.bc.ca/bcgov-common/bcgovcommonfeedback',
+    formUrl:
+      'https://chefs-jujaga-wxpbtr-dev.pathfinder.gov.bc.ca/bcgov-common/formone',
     submission: {
       data: {
         feedbackOnFormIoTool: 'test'

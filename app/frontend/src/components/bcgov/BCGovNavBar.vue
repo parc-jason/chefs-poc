@@ -6,10 +6,13 @@
           <router-link :to="{ name: 'Home' }">Home</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'Form' }">Form</router-link>
+          <router-link :to="{ name: 'FormOne' }">Form One</router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'SecureForm' }">Secure Form</router-link>
+          <router-link :to="{ name: 'FormTwo' }">Form Two</router-link>
+        </li>
+        <li>
+          <router-link :to="{ name: 'FormThree' }">Form Three</router-link>
         </li>
       </ul>
     </div>

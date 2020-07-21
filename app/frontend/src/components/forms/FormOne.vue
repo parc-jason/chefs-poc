@@ -1,7 +1,7 @@
 <template>
   <Formio
-    :form="formUrl"
-    :src="source"
+    :form="form"
+    :src="formUrl"
     :submission="submission"
     v-on:change="onChangeMethod"
     v-on:submit="onSubmitMethod"
@@ -22,7 +22,7 @@ export default {
       'https://chefs-jujaga-wxpbtr-dev.pathfinder.gov.bc.ca/bcgov-common/formone',
     submission: {
       data: {
-        feedbackOnFormIoTool: 'test'
+        formOneTextArea: 'prefilled value'
       }
     }
   }),

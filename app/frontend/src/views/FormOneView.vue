@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1 class="my-6 text-center">Form</h1>
+    <h1 class="my-6 text-center">Form One</h1>
     <FormOne />
   </v-container>
 </template>
@@ -9,7 +9,7 @@
 import FormOne from '@/components/forms/FormOne.vue';
 
 export default {
-  name: 'Form',
+  name: 'FormOneView',
   components: {
     FormOne
   }

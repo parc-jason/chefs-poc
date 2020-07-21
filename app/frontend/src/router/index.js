@@ -29,17 +29,26 @@ export default function getRouter(basePath = '/') {
         }
       },
       {
-        path: '/form',
-        name: 'Form',
-        component: () => import(/* webpackChunkName: "form" */ '@/views/Form.vue'),
+        path: '/formone',
+        name: 'FormOne',
+        component: () => import(/* webpackChunkName: "form-one" */ '@/views/FormOneView.vue'),
         meta: {
           hasLogin: true
         }
       },
       {
-        path: '/secure-form',
-        name: 'SecureForm',
-        component: () => import(/* webpackChunkName: "secure-form" */ '@/views/SecureForm.vue'),
+        path: '/formtwo',
+        name: 'FormTwo',
+        component: () => import(/* webpackChunkName: "form-two" */ '@/views/FormTwoView.vue'),
+        meta: {
+          hasLogin: true,
+          requiresAuth: true
+        }
+      },
+      {
+        path: '/formthree',
+        name: 'FormThree',
+        component: () => import(/* webpackChunkName: "form-three" */ '@/views/FormThreeView.vue'),
         meta: {
           hasLogin: true,
           requiresAuth: true

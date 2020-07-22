@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <formio :src="formUrl" v-on:submit="onSubmitMethod" />
+    <formio :src="formUrl" @submit="onSubmitMethod" />
   </v-container>
 </template>
 

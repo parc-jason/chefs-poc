@@ -3,8 +3,8 @@
     :form="form"
     :src="formUrl"
     :submission="submission"
-    v-on:change="onChangeMethod"
-    v-on:submit="onSubmitMethod"
+    @change="onChangeMethod"
+    @submit="onSubmitMethod"
   />
 </template>
 

@@ -9,6 +9,7 @@
 
 <script>
 import FormTwo from '@/components/forms/FormTwo.vue';
+
 export default {
   name: 'FormTwoView',
   components: {

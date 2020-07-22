@@ -1,9 +1,7 @@
 <template>
-  <FormBuilder
-    :form="{ display: 'form' }"
-    :options="{}"
-    @change="onChangeMethod"
-  />
+  <div>
+    <FormBuilder :form="{ display: 'form' }" :options="{}" @change="onChangeMethod" />
+  </div>
 </template>
 
 <script>
@@ -17,7 +15,7 @@ export default {
   methods: {
     onChangeMethod(schema) {
       console.debug('schema', schema); // eslint-disable-line no-console
-    },
+    }
   }
 };
 </script>
